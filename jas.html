@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MarketShield | Startup Prototype</title>
+  <style>
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: Arial, sans-serif; line-height:1.6; }
+    header {
+      background: linear-gradient(120deg, #7c3aed, #4f46e5);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 { font-size: 42px; margin-bottom: 16px; }
+    header p { font-size: 18px; max-width: 700px; margin:0 auto 20px; }
+    header button {
+      background: white;
+      color: #4f46e5;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    header button:hover { background:#f3f4f6; }
+    section { padding: 60px 20px; max-width: 1000px; margin:auto; }
+    h2 { font-size: 28px; margin-bottom: 20px; color:#111827; text-align:center; }
+    p { color:#374151; margin-bottom: 16px; }
+    .features {
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+      margin-top:30px;
+    }
+    .feature {
+      background:#f9fafb;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    }
+    .feature h3 { margin-bottom:10px; color:#4f46e5; }
+    footer {
+      background:#111827;
+      color:#9ca3af;
+      text-align:center;
+      padding:30px 20px;
+      font-size:14px;
+    }
+    .contact input, .contact textarea {
+      width:100%; padding:12px; margin-bottom:12px;
+      border:1px solid #d1d5db; border-radius:8px;
+    }
+    .contact button {
+      background:#4f46e5; color:white; padding:12px 20px;
+      border:none; border-radius:8px; cursor:pointer; font-weight:bold;
+    }
+    .contact button:hover { background:#4338ca; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>MarketShield</h1>
+    <p>Your AI-powered shield for safer, smarter, and more transparent securities markets.</p>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+      Learn More
+    </button>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About MarketShield</h2>
+    <p>
+      MarketShield is a revolutionary prototype designed to transform the securities market. 
+      It combines <strong>fraud prevention</strong>, <strong>bond market liquidity</strong>, 
+      <strong>compliance automation</strong>, and <strong>investor education</strong> into a single platform.  
+      By blending AI/ML, blockchain, and gamified learning, MarketShield builds trust and inclusivity in financial systems.
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>🔍 Fraud Detection</h3>
+        <p>AI models flag unusual trades in real time, reducing risks of insider trading and manipulation.</p>
+      </div>
+      <div class="feature">
+        <h3>📈 Bond Liquidity Engine</h3>
+        <p>Smart matching algorithms improve transparency, order depth, and price discovery in bond markets.</p>
+      </div>
+      <div class="feature">
+        <h3>⚖️ Compliance Monitoring</h3>
+        <p>NLP automates checks for filings and disclosures, reducing manual oversight and regulatory costs.</p>
+      </div>
+      <div class="feature">
+        <h3>🎓 Investor Education</h3>
+        <p>Gamified learning and personalized insights boost retail investor confidence and participation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact" onsubmit="event.preventDefault(); alert('Thank you! We will reach out soon.');">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 MarketShield. Built for the Securities Market Hackathon.
+  </footer>
+
+</body>
+</html>
